@@ -1,0 +1,182 @@
+{
+ "properties": {
+  "displayName": "Prod-AddTags",
+  "policyType": "Custom",
+  "description": "",
+  "metadata": {
+   "category": "Tags",
+   "createdBy": "8c4048bc-9437-4ee8-9a13-160c9c8f0b44",
+   "createdOn": "2021-02-01T00:01:43.2789945Z",
+   "updatedBy": "8c4048bc-9437-4ee8-9a13-160c9c8f0b44",
+   "updatedOn": "2021-02-01T00:24:57.0027261Z"
+  },
+  "parameters": {
+   "Applicationname": {
+    "type": "String",
+    "metadata": {
+     "displayName": "Applicationname"
+    },
+    "defaultValue": "NA"
+   },
+   "Enviroment": {
+    "type": "String",
+    "metadata": {
+     "displayName": "Enviroment"
+    },
+    "defaultValue": "Prod"
+   },
+   "SystemOwner": {
+    "type": "String",
+    "metadata": {
+     "displayName": "SystemOwner"
+    },
+    "defaultValue": "NA"
+   },
+   "BusinessUnit": {
+    "type": "String",
+    "metadata": {
+     "displayName": "BusinessUnit"
+    },
+    "defaultValue": "NA"
+   },
+   "Fakturareferanse": {
+    "type": "String",
+    "metadata": {
+     "displayName": "Fakturareferanse"
+    },
+    "defaultValue": "NA"
+   },
+   "Productowner": {
+    "type": "String",
+    "metadata": {
+     "displayName": "Productowner"
+    },
+    "defaultValue": "NA"
+   },
+   "TechnicalProductOwner": {
+    "type": "String",
+    "metadata": {
+     "displayName": "TechnicalProductOwner"
+    },
+    "defaultValue": "NA"
+   },
+   "Requestor": {
+    "type": "String",
+    "metadata": {
+     "displayName": "Requestor"
+    },
+    "defaultValue": "NA"
+   }
+  },
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "Append a tag and its value-ApplicationName",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2a0e14a6-b0a6-4fab-991a-187a4f81c498",
+    "parameters": {
+     "tagName": {
+      "value": "Applicationname"
+     },
+     "tagValue": {
+      "value": "[parameters('Applicationname')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Append a tag and its value-Enviroment",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2a0e14a6-b0a6-4fab-991a-187a4f81c498",
+    "parameters": {
+     "tagName": {
+      "value": "Enviroment"
+     },
+     "tagValue": {
+      "value": "[parameters('Enviroment')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Append a tag and its value to-SystemOwner",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2a0e14a6-b0a6-4fab-991a-187a4f81c498",
+    "parameters": {
+     "tagName": {
+      "value": "SystemOwner"
+     },
+     "tagValue": {
+      "value": "[parameters('SystemOwner')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Append a tag and its value to -BusinessUnit",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2a0e14a6-b0a6-4fab-991a-187a4f81c498",
+    "parameters": {
+     "tagName": {
+      "value": "BusinessUnit"
+     },
+     "tagValue": {
+      "value": "[parameters('BusinessUnit')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Append a tag and its value to -Fakturareferanse",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2a0e14a6-b0a6-4fab-991a-187a4f81c498",
+    "parameters": {
+     "tagName": {
+      "value": "Fakturareferanse"
+     },
+     "tagValue": {
+      "value": "[parameters('Fakturareferanse')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Append a tag and its value to -Productowner",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2a0e14a6-b0a6-4fab-991a-187a4f81c498",
+    "parameters": {
+     "tagName": {
+      "value": "Productowner"
+     },
+     "tagValue": {
+      "value": "[parameters('Productowner')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Append a tag and its value to -TechnicalProductOwner",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2a0e14a6-b0a6-4fab-991a-187a4f81c498",
+    "parameters": {
+     "tagName": {
+      "value": "TechnicalProductOwner"
+     },
+     "tagValue": {
+      "value": "[parameters('TechnicalProductOwner')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Append a tag and its value to -Requestor",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2a0e14a6-b0a6-4fab-991a-187a4f81c498",
+    "parameters": {
+     "tagName": {
+      "value": "Requestor"
+     },
+     "tagValue": {
+      "value": "[parameters('Requestor')]"
+     }
+    },
+    "groupNames": []
+   }
+  ],
+  "policyDefinitionGroups": []
+ },
+ "id": "/providers/Microsoft.Management/managementGroups/skytjenester/providers/Microsoft.Authorization/policySetDefinitions/04d6fc9e0fe14fa18db217b9",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "04d6fc9e0fe14fa18db217b9"
+}
